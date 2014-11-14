@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<script>
+
+			var num = 0, tot = 0, max = 0, min = 0, avg = 0, loop = 0;
+
+			while(num != null){
+				num = prompt();
+
+				if(num != null){
+					tot = parseFloat(tot) + parseFloat(num);
+					
+					if(num < min){
+						min = parseFloat(num);
+					}
+					
+					if(num > max){
+						max = parseFloat(num);
+					}
+					
+					avg = tot / loop;
+				}
+					
+				loop++;
+				
+			}
+
+			alert(tot + "\n" + max + "\n" + min + "\n" + avg);
+
+		</script>
+	</head>
+</html>

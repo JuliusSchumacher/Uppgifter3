@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<script>
+			var amount = prompt("amount"), goal = prompt("goal");
+			var rate = parseFloat(prompt("rate")) + 1;
+			var time = 0, double = 1;
+
+
+			while(double < goal / amount) {
+				double = double * rate;
+				time++;
+				
+			}
+			document.write(time);
+		</script>
+	</head>
+</html>

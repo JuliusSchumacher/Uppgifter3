@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<script>
+			var time = 0, amount = 1, tot = 0;
+			
+			while(tot < 1000000000){
+				tot = parseFloat(tot) + parseFloat(amount);
+				amount = amount * 2;
+				time++;
+			}
+			
+			alert(time)
+		</script>
+	</head>
+</html>
